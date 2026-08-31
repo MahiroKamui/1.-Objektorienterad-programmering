@@ -22,6 +22,13 @@ export class BankAccount {
         }
         this.balance -= amount;
     }
+    showInfo() {
+        console.log(`account holder: ${this.accountHolder}`);
+        console.log(`current balance: ${this.balance}`);
+    }
+    getBalance() {
+        return this.balance;
+    }
     constructor(name: string, balance: number) {
         this.accountHolder = name;
         this.balance = balance;

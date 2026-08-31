@@ -1,8 +1,15 @@
-import {BankAccount} from "./bank-account";
+import {BankAccount} from "./bank-account.ts";
 
 
-const denisa = new BankAccount("vadsomhelst", 1500)
-denisa.withdraw(1501)
+const accountOne = new BankAccount("Luna", 1500)
+const accountTwo = new BankAccount("Tom", 7500)
 
+accountOne.withdraw(270)
+accountOne.deposit(563)
+console.log(accountOne.getBalance())
+accountOne.showInfo()
 
-console.log(denisa);
+accountTwo.withdraw(500)
+accountTwo.deposit(563)
+console.log(accountTwo.getBalance())
+accountTwo.showInfo()
